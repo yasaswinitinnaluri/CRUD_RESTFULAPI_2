@@ -1,0 +1,33 @@
+
+### GET all  course
+GET http://localhost:3000/users
+
+### GET course
+GET http://localhost:3000/get/ejTs6Hm60IQjMWFZoVKw
+
+### ADD A course
+POST http://localhost:3000/add/user
+Content-Type: application/json
+
+{
+    "name": "c++",
+    "email": "email@gamil.com"
+}
+
+### UPDATE price
+PATCH http://localhost:3000/update
+Content-Type: application/json
+
+{
+    "id" : "ejTs6Hm60IQjMWFZoVKw",
+    "name": "shankar"
+}
+
+
+###DELETE A course
+DELETE http://localhost:3000/delete
+Content-Type: application/json
+
+{
+    "id": "ejTs6Hm60IQjMWFZoVKw"
+}
